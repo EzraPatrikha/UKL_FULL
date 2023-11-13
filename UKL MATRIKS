@@ -9,7 +9,7 @@ public class ganti_ini {
 public static void main(String[] args){
 // Membuat do while LOOPING nya opsional.
  Scanner ganti = new Scanner(System.in);
- String loop; // Untuk perulangan
+ String ganti_nama; // Untuk perulangan
 // variabel do{}while.
 do{ 
 System.out.println("Tugas ke : ");
@@ -131,8 +131,8 @@ System.out.println("================A===============");
                 } break;
 }
 System.out.println("Ulangi? (y/n) : ");
-loop = ganti.next();
-} while (loop.equalsIgnorecase("y"))
+ganti_nama = ganti.next();
+} while (ganti_nama.equalsIgnorecase("y"))
 System.out.println("See you next time.")
 ganti.close();
  }
