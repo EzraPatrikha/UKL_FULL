@@ -1,0 +1,139 @@
+/* jangan lupa buat di modif
+* setiap "Ganti" kalian ganti sendiri dengan nama variabel kalian
+* Codingnya pasti  ada yang error jadi di cek lagi
+* jangan lupa arti-arti variabelnya
+thanks */
+
+import java.util.Scanner;
+public class ganti_ini {
+public static void main(String[] args){
+// Membuat do while LOOPING nya opsional.
+ Scanner ganti = new Scanner(System.in);
+ String loop; // Untuk perulangan
+// variabel do{}while.
+do{ 
+System.out.println("Tugas ke : ");
+int ganti = ganti.nextInt();
+// Sistem switch case untuk memilih tugas yang ingin dilihat
+switch (ganti) {
+ case 1: System.out.println("======================");
+System.out.println("Tugas Deret Matematika");
+int no_awal = 5;
+int no_selisih = 3;
+for (int i = 0; int < 10; i++){
+    int angka = no_awal + (i*no_selisih);
+    System.out.println(angka+" ");
+}
+break;
+
+case 2:
+System.out.println("=================================");
+ System.out.println("Tugas Deret Matematika Matrix 3x4");
+   int a = 5;
+   int s = 3;
+   int suku = 0;
+   for (int i = 0; i < 3; i++) {
+   for (int j = 0; j < 4; j++) {
+    if (suku < 12) {
+    int angka = a + (suku*s);
+     System.out.print(angka+"\t");
+      suku++;
+      } else{
+       break;  
+       }                  
+  } System.out.println();
+   } break;
+
+ case 3: 
+ int n = 2;
+                int h = 5;
+                int e = 3;
+                int no = 0;
+                int b = 0;
+                    System.out.println("===================A=================");
+                    for (int i = 0; i <=n; i++) {
+                        for (int j = 0; j <=i; j++) {
+                            if (true) {
+                                int angka = h + (no*e);
+                                System.out.print(angka+"\t");
+                                b += angka;
+                                no++;
+                            }
+                    }
+                        System.out.println();
+                } System.out.println("Totalnya : "+b);
+                    System.out.println("===================B=================");
+                    int q = 5;
+                    int w = 3;
+                    int f = 0;
+                    int p = 0;
+                    for (int i = 0; i <=2; i++) {
+                        for (int j = i; j <3; j++) {
+                            if (true) {
+                                int angka = q + (f*w);
+                                System.out.print(angka+"\t");
+                                p += angka;
+                                f++;
+                            }
+                        } System.out.println();
+                    } System.out.println("Totalnya : "+p); 
+                    break;
+
+case 4: 
+System.out.println("================A===============");   
+                int awl = 5;
+                    int sls = 3;
+                    int oo = 0;
+                    int ff = 0;
+                    for (int i = 0; i <= 3; i++) {
+                        for (int j = 0; j < i; j++) {
+                            if (true) {
+                                int angka = awl + (oo*sls);
+                                System.out.print(angka+" ");
+                                ff += angka;
+                                oo++;
+                            } 
+                        }
+                        System.out.println();
+                    } for (int i = 1; i <=2; i++) {
+                        for (int j = i; j <=2; j++) {
+                            if (true) {
+                                int angka = awl + (oo*sls);
+                                System.out.print(angka+" ");
+                                oo++;
+                            }
+                    }
+                        System.out.println();
+                    } System.out.println("===================B===============");
+                    int ee = 5;
+                    int rr = 3;
+                    int ll = 0;
+                    int vv = 0;
+                  for (int i = 0; i <=1; i++) {
+                        for (int j = i; j <=2; j++) {
+                            if (true) {
+                                int angka = ee + (ll*rr);
+                                System.out.print(angka+" ");
+                                ll++;
+                            }
+                    }
+                        System.out.println("");
+                    }  for (int i = 0; i <=2; i++) {
+                        for (int j = 0; j <=i; j++) {
+                            if (true) {
+                                int angka = ee + (ll*rr);
+                                System.out.print(angka+" ");
+                                vv += angka;
+                                ll++;
+                            }
+                    }
+                        System.out.println();
+                } break;
+}
+System.out.println("Ulangi? (y/n) : ");
+loop = ganti.next();
+} while (loop.equalsIgnorecase("y"))
+System.out.println("See you next time.")
+ganti.close();
+ }
+}
