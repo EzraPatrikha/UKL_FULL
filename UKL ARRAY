@@ -1,0 +1,14 @@
+/* Modifkan codenya sesuai keinginanmu
+* Setiap "Ganti" digantikan namanya sesuai mau mu
+* Dipelajari codingannya.
+* Jangan lupa baca //nya dulu.
+ thanks */
+
+import java.util.Scanner;
+public class ganti_ini{
+public static void main(String[] args){
+Scanner ganti = new Scanner(System.in);
+// Looping untuk do while
+String ganti;
+}
+}
