@@ -1,6 +1,6 @@
 /* Modifkan codenya sesuai keinginanmu
 * Setiap "Ganti" digantikan namanya sesuai mau mu
-* Dipelajari codingannya.
+* Codingnya pasti ada yang error jadi di cek lagi.
 * Jangan lupa baca //nya dulu.
  thanks */
 
@@ -9,6 +9,62 @@ public class ganti_ini{
 public static void main(String[] args){
 Scanner ganti = new Scanner(System.in);
 // Looping untuk do while
-String ganti;
+String ganti_loop;
+// Looping DO WHILE (opsional)
+do{
+System.out.println("Tugas ke : ");
+int ganti_namanya = ganti.nextInt();
+switch (ganti_namanya){
+case 1: System.out.println("Array");
+System.out.println("Array 2 dimensi A-B");
+int baris = 2
+int kolom = 2;
+//ARRAY A dan B
+int[][] A = {{-7,5},{4,8}};
+int[][] B = {{1,1},{-4,9}};
+//Hasil
+int[][] hasil = new int[baris] [kolom]; 
+
+System.out.println("ANGKA ARRAY");
+            System.out.println("\tA");
+            System.out.println("======================");
+            for (int i = 0; i < baris; i++) {
+               for (int j = 0; j < baris; j++) {
+                System.out.print(A[i][j]+"   ");
+               }
+               System.out.println();
+            }
+            System.out.println("======================");
+            System.out.println("\tB");
+            for (int i = 0; i < baris; i++) {
+                for (int j = 0; j < baris; j++) {
+                    System.out.print(B[i][j]+"   ");
+                }
+                System.out.println();
+            } System.out.println("==============================");
+
+            for (int i = 0; i < A.length; i++) {
+                for (int j = 0; j < A[i].length; j++) {
+                    System.out.println(" A "+A[i][j]+" - "+" B "+B[i][j]);
+                }
+            }
+            for (int i = 0; i < baris; i++) {
+                for (int j = 0; j < kolom; j++) {
+                    hasil[i][j] = A[i][j] - B[i][j];
+                }
+            }
+            System.out.println("==========HASIL=============");
+            for (int i = 0; i < baris; i++) {
+                for (int j = 0; j < kolom; j++) {
+                    System.out.print("["+hasil[i][j]+ " ");
+                }
+                System.out.println("]");
+            } break;
+}
+System.out.println("Ulangi? (y/n) : ");
+ganti_loop = ganti.next();
+}while(ganti_loop.equalsIgnorecase("y"))
+System.out.println("See you next time.");
+ganti.close();
 }
 }
