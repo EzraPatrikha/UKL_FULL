@@ -1,0 +1,99 @@
+ System.out.println("Seleksi Kondisi Jalan TOL!");
+            Scanner TOL = new Scanner(System.in);
+            String looping;
+            do {
+                System.out.println("ASAL : ");
+        System.out.println("1.Dupak");
+        System.out.println("2.Waru");
+        System.out.println("3.Sidoarjo");
+        System.out.println("4.Porong");
+        System.out.println("5.Kejapanan");
+         System.out.print("Masukkan Asal : ");
+         int asal = TOL.nextInt();
+         System.out.println();
+         System.out.println("TUJUAN : ");
+         System.out.println("1.Waru");
+        System.out.println("2.Sidoarjo");
+        System.out.println("3.Porong");
+        System.out.println("4.Kejapanan");
+        System.out.println("5.Gempol");
+        System.out.print("Masukkan Tujuan : ");
+        int tujuan = TOL.nextInt();
+         System.out.println();
+         System.out.println("GOLONGAN : ");
+         System.out.println("1. Sedan, Jeep, Pick-up");
+         System.out.println("2. Truk dengan 2 sumbu roda");
+         System.out.println("3. Truk dengan 3 sumbu roda");
+         System.out.print("Masukkan Golongan : ");
+         int golongan = TOL.nextInt();
+         switch (asal) {
+            case 1: if (tujuan == 1)
+            if (golongan == 1) {
+                System.out.println("Tagihan anda : Rp.5000");
+            } else if (golongan == 2 || golongan == 3) {
+                System.out.println("Tagihan anda : Rp.8000");
+            } break;
+
+            case 2: if (tujuan == 2)
+            if (golongan == 1) {
+                System.out.println("Tagihan anda : Rp.6000");
+            } else if (golongan == 2 || golongan == 3) {
+                System.out.println("Tagihan anda : Rp.9000");
+            }
+            if (tujuan == 3)
+            if (golongan == 1) {
+                System.out.println("Tagihan anda : Rp.9000");
+            } else if (golongan == 2 || golongan == 3) {
+                System.out.println("Tagihan anda : Rp. 14.000");
+            } break;
+            
+            case 3: if (tujuan == 1)
+            if (golongan == 1) {
+                System.out.println("Tagihan anda : Rp. 6000");
+            } else if (golongan == 2 || golongan == 3) {
+                System.out.println("Tagihan anda : Rp. 9000");
+            } if (tujuan == 3)
+            if (golongan == 1) {
+                System.out.println("Tagihan anda : Rp. 5.500");
+            } else if (golongan == 2 || golongan == 3) {
+                System.out.println("Tagihan anda : Rp. 8.500");
+            } break;
+
+            case 4: if (tujuan == 1 )
+            if (golongan == 1) {
+                System.out.println("Tagihan anda : Rp. 9000");
+            } else if (golongan == 2 || golongan == 3) {
+                System.out.println("Tagihan anda : Rp. 14.000");
+            } if (tujuan == 2)
+            if (golongan == 1) {
+               System.out.println("Tagihan anda : Rp. 5.500");
+            } else if (golongan == 2 || golongan == 3) {
+               System.out.println("Tagihan anda : Rp. 8.500");
+            } if (tujuan == 4) 
+            if (golongan == 1) {
+                System.out.println("Tagihan anda : Rp. 6000");
+            } else if (golongan == 2 || golongan == 3) {
+                System.out.println("Tagihan anda : Rp. 8.500");
+            } break;
+
+            case 5: if (tujuan == 5) 
+            if (golongan == 1) {
+                System.out.println("Tagihan anda : Rp. 3000");
+            } else if (golongan == 2 || golongan == 3) {
+                System.out.println("Tagihan anda : Rp. 5000");
+            } break;
+            default: System.out.println("ID is not detected or is not valid.");
+         }
+         System.out.println("====================================");
+         System.out.println("Try again? (y/n) : ");
+         looping = TOL.next();
+            } while (looping.equalsIgnoreCase("y"));
+            System.out.println("See ya...");
+            break;
+
+            case 10: 
+            }
+            System.out.print("\n=============================================");
+            System.out.print("\nUlangi Tugas? (y/n) : ");
+            loop = gg.next();
+            System.out.println("=============================================");
