@@ -1,0 +1,49 @@
+System.out.println("================A===============");   
+                int awl = 5;
+                    int sls = 3;
+                    int oo = 0;
+                    int ff = 0;
+                    for (int i = 0; i <= 3; i++) {
+                        for (int j = 0; j < i; j++) {
+                            if (true) {
+                                int angka = awl + (oo*sls);
+                                System.out.print(angka+" ");
+                                ff += angka;
+                                oo++;
+                            } 
+                        }
+                        System.out.println();
+                    } for (int i = 1; i <=2; i++) {
+                        for (int j = i; j <=2; j++) {
+                            if (true) {
+                                int angka = awl + (oo*sls);
+                                System.out.print(angka+" ");
+                                oo++;
+                            }
+                    }
+                        System.out.println();
+                    } System.out.println("===================B===============");
+                    int ee = 5;
+                    int rr = 3;
+                    int ll = 0;
+                    int vv = 0;
+                  for (int i = 0; i <=1; i++) {
+                        for (int j = i; j <=2; j++) {
+                            if (true) {
+                                int angka = ee + (ll*rr);
+                                System.out.print(angka+" ");
+                                ll++;
+                            }
+                    }
+                        System.out.println("");
+                    }  for (int i = 0; i <=2; i++) {
+                        for (int j = 0; j <=i; j++) {
+                            if (true) {
+                                int angka = ee + (ll*rr);
+                                System.out.print(angka+" ");
+                                vv += angka;
+                                ll++;
+                            }
+                    }
+                        System.out.println();
+                }
