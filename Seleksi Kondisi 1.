@@ -1,0 +1,103 @@
+System.out.println("Seleksi kondisi tentang penghitungan air!");
+            Scanner PAM = new Scanner(System.in);
+            String input;
+            String[] nama = {"Ali","Budi","Dani","Edi","Umar"};
+            int[] id = {1,2,3,4,5};
+            do { System.out.print("Masukkan ID anda : ");
+                int ID = PAM.nextInt();
+                System.out.print("Masukkan Pemakaian Air (m3) : ");
+                int pam = PAM.nextInt();
+                System.out.println("============================================");
+                switch (ID) {
+                    case 1: for (int i = 0; i < ID; i++) {
+                        System.out.println("ID anda : "+id[i]);
+                        System.out.println("Nama anda : "+nama[i]);
+                    }
+                    if (pam >= 1 && pam<=10) {
+                        int hitungkan = 2000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=11 && pam<=20 ) {
+                        int hitungkan = 3000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=21 && pam<=30) {
+                        int hitungkan = 4000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=31) {
+                        int hitungkan = 5000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } break;
+                case 2: for (int i = 1; i < ID; i++) {
+                        System.out.println("ID anda : "+id[i]);
+                        System.out.println("Nama anda : "+nama[i]);
+                    }
+                    if (pam >= 1 && pam<=10) {
+                        int hitungkan = 2000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=11 && pam<=20 ) {
+                        int hitungkan = 3000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=21 && pam<=30) {
+                        int hitungkan = 4000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=31) {
+                        int hitungkan = 5000*pam+10000;
+                        System.out.println("Tagihan andad adalah : Rp. "+hitungkan);
+                    } break;
+                case 3: for (int i = 2; i < ID; i++) {
+                        System.out.println("ID anda : "+id[i]);
+                        System.out.println("Nama anda : "+nama[i]);
+                    }
+                    if (pam >= 1 && pam<=10) {
+                        int hitungkan = 2000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=11 && pam<=20 ) {
+                        int hitungkan = 3000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=21 && pam<=30) {
+                        int hitungkan = 4000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=31) {
+                        int hitungkan = 5000*pam+10000;
+                        System.out.println("Tagihan andad adalah : Rp. "+hitungkan);
+                    } break;
+                case 4: for (int i = 3; i < ID; i++) {
+                        System.out.println("ID anda : "+id[i]);
+                        System.out.println("Nama anda : "+nama[i]);
+                    }
+                    if (pam >= 1 && pam<=10) {
+                        int hitungkan = 2000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=11 && pam<=20 ) {
+                        int hitungkan = 3000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=21 && pam<=30) {
+                        int hitungkan = 4000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=31) {
+                        int hitungkan = 5000*pam+10000;
+                        System.out.println("Tagihan andad adalah : Rp. "+hitungkan);
+                    } break;
+                    case 5: for (int i = 4; i < ID; i++) {
+                        System.out.println("ID anda : "+id[i]);
+                        System.out.println("Nama anda : "+nama[i]);
+                    }
+                    if (pam >= 1 && pam<=10) {
+                        int hitungkan = 2000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=11 && pam<=20 ) {
+                        int hitungkan = 3000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=21 && pam<=30) {
+                        int hitungkan = 4000*pam+10000;
+                        System.out.println("Tagihan anda adalah : Rp. "+hitungkan);
+                    } else if (pam >=31) {
+                        int hitungkan = 5000*pam+10000;
+                        System.out.println("Tagihan andad adalah : Rp. "+hitungkan);
+                    } break;
+                }
+                System.out.println("=====================:P===============");
+                System.out.print("Try Again? (y/n) : ");
+                input = PAM.next();
+            } while (input.equalsIgnoreCase("y"));
+            System.out.println("Bye Bye!");
+            break;
