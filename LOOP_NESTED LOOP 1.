@@ -1,0 +1,7 @@
+ System.out.println("=================================");
+                    System.out.println("Tugas Deret Matematika!");
+                    int awal = 5;
+                    int selisih = 3;
+                    for (int i = 0; i < 10; i++) {
+                        int angka = awal + (i*selisih);
+                        System.out.print(angka+" ");
